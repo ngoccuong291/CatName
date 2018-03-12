@@ -1,5 +1,5 @@
 //
-//  CatFilter.swift
+//  CatFilterViewModel.swift
 //  CatNames
 //
 //  Created by Leon Nguyen on 12/3/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CatFilter: NSObject {
+class CatFilterViewModel: NSObject {
 
     fileprivate var people: [Person] = [Person]()
     

@@ -20,7 +20,7 @@ final class CatNamesSpec: QuickSpec {
             let sampleResponse = Bundle.testBundle.loadJSON(fromFile: "sampleResponse")
             let people: [Person] = Mapper<Person>().mapArray(JSONObject: sampleResponse)!
             
-            let catfilter = CatFilter(people: people)
+            let catfilter = CatFilterViewModel(people: people)
             
             dprint("People: \(people)")
             beforeEach {

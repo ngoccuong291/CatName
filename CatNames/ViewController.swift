@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet fileprivate weak var maleCatsLabel: UILabel!
     @IBOutlet fileprivate weak var femaleCatsLabel: UILabel!
     
-    fileprivate var catFilter: CatFilter = CatFilter()
+    fileprivate var catFilter: CatFilterViewModel = CatFilterViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
             let peopleArray = response.result.value
             
             if let peopleArray = peopleArray {
-                self?.catFilter = CatFilter(people: peopleArray)
+                self?.catFilter = CatFilterViewModel(people: peopleArray)
                 self?.catFilter.filter()
                 DispatchQueue.main.async {
                     SVProgressHUD.dismiss()
