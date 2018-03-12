@@ -11,7 +11,7 @@ import ObjectMapper
 
 class Pet: Mappable {
 
-    var name: String?
+    var name: String = ""
     var type: String?
     
     required init?(map: Map){
@@ -20,6 +20,10 @@ class Pet: Mappable {
     func mapping(map: Map) {
         name <- map["name"]
         type <- map["type"]
+    }
+    
+    var isCat: Bool {
+        return type == "Cat"
     }
     
 }

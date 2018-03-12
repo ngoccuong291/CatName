@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		30CB02F5D502E812B6597D8F /* Pods_CatNamesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF001DB86CC7F123D0A50DA /* Pods_CatNamesTests.framework */; };
 		73BEFABDE5692062EEF6D11A /* Pods_CatNames.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA82B7229F76AA693AE813FB /* Pods_CatNames.framework */; };
+		895DE33E2056A80400F959FF /* CatFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895DE33D2056A80400F959FF /* CatFilter.swift */; };
 		89B08AFD205691160057B635 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B08AFC205691160057B635 /* AppDelegate.swift */; };
 		89B08AFF205691160057B635 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B08AFE205691160057B635 /* ViewController.swift */; };
 		89B08B02205691160057B635 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B08B00205691160057B635 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		063109E50EB60183C2731475 /* Pods-CatNamesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatNamesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatNamesTests/Pods-CatNamesTests.release.xcconfig"; sourceTree = "<group>"; };
+		895DE33D2056A80400F959FF /* CatFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFilter.swift; sourceTree = "<group>"; };
 		89B08AF9205691160057B635 /* CatNames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatNames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B08AFC205691160057B635 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89B08AFE205691160057B635 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			children = (
 				89B08B2220569B290057B635 /* Person.swift */,
 				89B08B2620569E620057B635 /* Pet.swift */,
+				895DE33D2056A80400F959FF /* CatFilter.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 			files = (
 				89B08B2320569B290057B635 /* Person.swift in Sources */,
 				89B08AFF205691160057B635 /* ViewController.swift in Sources */,
+				895DE33E2056A80400F959FF /* CatFilter.swift in Sources */,
 				89B08B1E2056945E0057B635 /* Debug.swift in Sources */,
 				89B08B2720569E620057B635 /* Pet.swift in Sources */,
 				89B08AFD205691160057B635 /* AppDelegate.swift in Sources */,

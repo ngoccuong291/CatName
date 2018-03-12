@@ -25,5 +25,13 @@ class Person: Mappable {
         age <- map["age"]
         pets <- map["pets"]
     }
+    
+    var isMale: Bool {
+        return gender == "Male"
+    }
+    
+    var isFemale: Bool {
+        return gender == "Female"
+    }
 
 }
