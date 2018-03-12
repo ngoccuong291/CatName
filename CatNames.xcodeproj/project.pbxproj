@@ -14,6 +14,7 @@
 		89B08B04205691160057B635 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89B08B03205691160057B635 /* Assets.xcassets */; };
 		89B08B07205691160057B635 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89B08B05205691160057B635 /* LaunchScreen.storyboard */; };
 		89B08B12205691160057B635 /* CatNamesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B08B11205691160057B635 /* CatNamesTests.swift */; };
+		89B08B1E2056945E0057B635 /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B08B1D2056945E0057B635 /* Debug.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		89B08B0D205691160057B635 /* CatNamesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatNamesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B08B11205691160057B635 /* CatNamesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatNamesTests.swift; sourceTree = "<group>"; };
 		89B08B13205691160057B635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89B08B1D2056945E0057B635 /* Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
 		8DB9CD1ACD2F75A90264A685 /* Pods-CatNames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatNames.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatNames/Pods-CatNames.debug.xcconfig"; sourceTree = "<group>"; };
 		A477D0C6FCB7967AAE8EF740 /* Pods-CatNames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatNames.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatNames/Pods-CatNames.release.xcconfig"; sourceTree = "<group>"; };
 		EA82B7229F76AA693AE813FB /* Pods_CatNames.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatNames.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +86,7 @@
 		89B08AFB205691160057B635 /* CatNames */ = {
 			isa = PBXGroup;
 			children = (
+				89B08B1C2056940E0057B635 /* Global */,
 				89B08AFC205691160057B635 /* AppDelegate.swift */,
 				89B08AFE205691160057B635 /* ViewController.swift */,
 				89B08B00205691160057B635 /* Main.storyboard */,
@@ -101,6 +104,14 @@
 				89B08B13205691160057B635 /* Info.plist */,
 			);
 			path = CatNamesTests;
+			sourceTree = "<group>";
+		};
+		89B08B1C2056940E0057B635 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				89B08B1D2056945E0057B635 /* Debug.swift */,
+			);
+			path = Global;
 			sourceTree = "<group>";
 		};
 		8F3E520D99A80184B4CABF4F /* Frameworks */ = {
@@ -281,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89B08AFF205691160057B635 /* ViewController.swift in Sources */,
+				89B08B1E2056945E0057B635 /* Debug.swift in Sources */,
 				89B08AFD205691160057B635 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

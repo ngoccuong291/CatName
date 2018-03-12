@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Alamofire.request("http://agl-developer-test.azurewebsites.net/people.json").responseJSON { response in
+            dprint("Request: \(String(describing: response.request))")
+            dprint("Response: \(String(describing: response.response))")
+            dprint("Result: \(response.result)")
+            
+            if let json = response.result.value {
+                dprint("JSON: \(json)")
+            }
+            
+            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                dprint("Data: \(utf8Text)")
+            }
+        }
+        
         return true
     }
 
