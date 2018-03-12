@@ -19,6 +19,8 @@
 		89B08B2320569B290057B635 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B08B2220569B290057B635 /* Person.swift */; };
 		89B08B2520569CB70057B635 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B08B2420569CB70057B635 /* Constants.swift */; };
 		89B08B2720569E620057B635 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B08B2620569E620057B635 /* Pet.swift */; };
+		89B08B292056A2980057B635 /* NSBundle+Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B08B282056A2980057B635 /* NSBundle+Specs.swift */; };
+		89B08B2B2056A2F50057B635 /* sampleResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 89B08B2A2056A2F50057B635 /* sampleResponse.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		89B08B2220569B290057B635 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		89B08B2420569CB70057B635 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		89B08B2620569E620057B635 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		89B08B282056A2980057B635 /* NSBundle+Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSBundle+Specs.swift"; sourceTree = "<group>"; };
+		89B08B2A2056A2F50057B635 /* sampleResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleResponse.json; sourceTree = "<group>"; };
 		8DB9CD1ACD2F75A90264A685 /* Pods-CatNames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatNames.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatNames/Pods-CatNames.debug.xcconfig"; sourceTree = "<group>"; };
 		A477D0C6FCB7967AAE8EF740 /* Pods-CatNames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatNames.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatNames/Pods-CatNames.release.xcconfig"; sourceTree = "<group>"; };
 		CBF001DB86CC7F123D0A50DA /* Pods_CatNamesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatNamesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,8 +116,10 @@
 		89B08B10205691160057B635 /* CatNamesTests */ = {
 			isa = PBXGroup;
 			children = (
+				89B08B2A2056A2F50057B635 /* sampleResponse.json */,
 				89B08B11205691160057B635 /* CatNamesTests.swift */,
 				89B08B13205691160057B635 /* Info.plist */,
+				89B08B282056A2980057B635 /* NSBundle+Specs.swift */,
 			);
 			path = CatNamesTests;
 			sourceTree = "<group>";
@@ -255,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89B08B2B2056A2F50057B635 /* sampleResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89B08B12205691160057B635 /* CatNamesTests.swift in Sources */,
+				89B08B292056A2980057B635 /* NSBundle+Specs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
