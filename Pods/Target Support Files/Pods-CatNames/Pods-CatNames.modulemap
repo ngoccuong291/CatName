@@ -1,0 +1,6 @@
+framework module Pods_CatNames {
+  umbrella header "Pods-CatNames-umbrella.h"
+
+  export *
+  module * { export * }
+}
