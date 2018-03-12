@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import AlamofireObjectMapper
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,17 +19,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        Alamofire.request("http://agl-developer-test.azurewebsites.net/people.json").responseJSON { response in
-            dprint("Request: \(String(describing: response.request))")
-            dprint("Response: \(String(describing: response.response))")
-            dprint("Result: \(response.result)")
+        let URL = Constants.General.apiProdEndpoint
+        
+        Alamofire.request(URL).responseArray { (response: DataResponse<[Person]>) in
             
-            if let json = response.result.value {
-                dprint("JSON: \(json)")
-            }
+            let peopleArray = response.result.value
             
-            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
-                dprint("Data: \(utf8Text)")
+            if let peopleArray = peopleArray {
+                for person in peopleArray {
+                    dprint(person.name)
+                }
             }
         }
         
