@@ -10,10 +10,17 @@ import UIKit
 
 class CatFilter: NSObject {
 
-    fileprivate var people: [Person]
+    fileprivate var people: [Person] = [Person]()
     
     var maleOwnerCats: [Pet] = [Pet]()
     var femaleOwnerCats: [Pet] = [Pet]()
+    
+    var maleOwnerCatsString: String = ""
+    var femaleOwnerCatsString: String = ""
+    
+    override init() {
+        super.init()
+    }
     
     init(people: [Person]) {
         self.people = people
@@ -46,6 +53,13 @@ class CatFilter: NSObject {
             return pet0.name < pet1.name
         }
 
+        for pet in maleOwnerCats {
+            maleOwnerCatsString += pet.name + "\n"
+        }
+        for pet in femaleOwnerCats {
+            femaleOwnerCatsString += pet.name + "\n"
+        }
+        
         dprint("Done")
         
     }
