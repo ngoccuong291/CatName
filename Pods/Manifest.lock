@@ -6,12 +6,14 @@ PODS:
   - Nimble (7.0.3)
   - ObjectMapper (3.1.0)
   - Quick (1.2.0)
+  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - AlamofireObjectMapper (~> 5.0)
   - Nimble (~> 7.0.2)
   - Quick (~> 1.2.0)
+  - SVProgressHUD (~> 2.2)
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
@@ -19,7 +21,8 @@ SPEC CHECKSUMS:
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 32c493be86e855eff5c947b3eecf09ee4c869d70
+PODFILE CHECKSUM: 15002ae79fda10167ac9c4b9226f3e02144cf26e
 
 COCOAPODS: 1.3.1

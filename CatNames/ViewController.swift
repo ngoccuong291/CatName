@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import AlamofireObjectMapper
+import SVProgressHUD
 
 class ViewController: UIViewController {
     
@@ -22,6 +23,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         let URL = Constants.General.apiProdEndpoint
         
+        SVProgressHUD.show()
         Alamofire.request(URL).responseArray { [weak self] (response: DataResponse<[Person]>) in
             
             let peopleArray = response.result.value
@@ -30,6 +32,7 @@ class ViewController: UIViewController {
                 self?.catFilter = CatFilter(people: peopleArray)
                 self?.catFilter.filter()
                 DispatchQueue.main.async {
+                    SVProgressHUD.dismiss()
                     self?.maleCatsLabel.text = self?.catFilter.maleOwnerCatsString
                     self?.femaleCatsLabel.text = self?.catFilter.femaleOwnerCatsString
                 }

@@ -10,6 +10,7 @@ target :CatNames do
 	# Third party libraries
 	pod 'Alamofire', '~> 4.7'
 	pod 'AlamofireObjectMapper', '~> 5.0'
+	pod 'SVProgressHUD', '~> 2.2'
 
 	target 'CatNamesTests' do
     inherit! :search_paths
