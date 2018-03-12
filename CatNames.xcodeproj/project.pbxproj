@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30CB02F5D502E812B6597D8F /* Pods_CatNamesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF001DB86CC7F123D0A50DA /* Pods_CatNamesTests.framework */; };
 		73BEFABDE5692062EEF6D11A /* Pods_CatNames.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA82B7229F76AA693AE813FB /* Pods_CatNames.framework */; };
 		89B08AFD205691160057B635 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B08AFC205691160057B635 /* AppDelegate.swift */; };
 		89B08AFF205691160057B635 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B08AFE205691160057B635 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		063109E50EB60183C2731475 /* Pods-CatNamesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatNamesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatNamesTests/Pods-CatNamesTests.release.xcconfig"; sourceTree = "<group>"; };
 		89B08AF9205691160057B635 /* CatNames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatNames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B08AFC205691160057B635 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89B08AFE205691160057B635 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		89B08B2620569E620057B635 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		8DB9CD1ACD2F75A90264A685 /* Pods-CatNames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatNames.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatNames/Pods-CatNames.debug.xcconfig"; sourceTree = "<group>"; };
 		A477D0C6FCB7967AAE8EF740 /* Pods-CatNames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatNames.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatNames/Pods-CatNames.release.xcconfig"; sourceTree = "<group>"; };
+		CBF001DB86CC7F123D0A50DA /* Pods_CatNamesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatNamesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E956CE4A904BC40C2D0EFA65 /* Pods-CatNamesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatNamesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatNamesTests/Pods-CatNamesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EA82B7229F76AA693AE813FB /* Pods_CatNames.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatNames.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30CB02F5D502E812B6597D8F /* Pods_CatNamesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				EA82B7229F76AA693AE813FB /* Pods_CatNames.framework */,
+				CBF001DB86CC7F123D0A50DA /* Pods_CatNamesTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,6 +150,8 @@
 			children = (
 				8DB9CD1ACD2F75A90264A685 /* Pods-CatNames.debug.xcconfig */,
 				A477D0C6FCB7967AAE8EF740 /* Pods-CatNames.release.xcconfig */,
+				E956CE4A904BC40C2D0EFA65 /* Pods-CatNamesTests.debug.xcconfig */,
+				063109E50EB60183C2731475 /* Pods-CatNamesTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -175,9 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89B08B19205691160057B635 /* Build configuration list for PBXNativeTarget "CatNamesTests" */;
 			buildPhases = (
+				F1FFC83A933810B6404F0BAA /* [CP] Check Pods Manifest.lock */,
 				89B08B09205691160057B635 /* Sources */,
 				89B08B0A205691160057B635 /* Frameworks */,
 				89B08B0B205691160057B635 /* Resources */,
+				2354F612475A36B62B05A36E /* [CP] Embed Pods Frameworks */,
+				15B5DDECD2298C146D321487 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +261,41 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		15B5DDECD2298C146D321487 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatNamesTests/Pods-CatNamesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2354F612475A36B62B05A36E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CatNamesTests/Pods-CatNamesTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatNamesTests/Pods-CatNamesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BBDA3E271781B1DCAB883ECD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,6 +327,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatNames/Pods-CatNames-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1FFC83A933810B6404F0BAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CatNamesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FE41BA6B41404D038FB7C0EB /* [CP] Embed Pods Frameworks */ = {
@@ -500,8 +564,9 @@
 		};
 		89B08B1A205691160057B635 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E956CE4A904BC40C2D0EFA65 /* Pods-CatNamesTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NK676B5UW3;
@@ -517,8 +582,9 @@
 		};
 		89B08B1B205691160057B635 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 063109E50EB60183C2731475 /* Pods-CatNamesTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NK676B5UW3;
